@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fff;
+      color: #333;
+      padding-bottom: 50px; /* space above footer */
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 15px 30px;
+    }
+
+    .navbar-brand img.logo {
+      height: 60px;
+      width: auto;
+    }
+
+    .navbar-nav .nav-link {
+      color: #333 !important;
+      font-weight: 500;
+      margin-left: 20px;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: #5a189a !important;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      margin-top: 120px;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .contact-section h1 {
+      color: black;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    /* Make the contact items left-aligned */
+    .contact-container {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;   /* aligns items to left */
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      padding: 12px 20px;
+      transition: background 0.3s ease;
+      width: 100%;              /* make all boxes equal width */
+    }
+
+    .contact-item:hover {
+      background-color: #e9ecef;
+    }
+
+    .contact-item i {
+      font-size: 1.5rem;
+      color: #5a189a;
+      min-width: 30px;
+      text-align: center;
+    }
+
+    .contact-item a,
+    .contact-item span {
+      color: black;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* Fixed Footer */
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 4px 0; /* thinner footer */
+      min-height: 35px;
+      z-index: 1000;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.85rem;
+      line-height: 1.2;
+    }
+
+    footer .social-icons {
+      margin-top: 3px;
+    }
+
+    footer .social-icons a {
+      color: white;
+      margin: 0 6px;
+      font-size: 1rem;
+      transition: color 0.2s ease;
+    }
+
+    footer .social-icons a:hover {
+      color: #5a189a;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        margin-top: 100px;
+      }
+
+      footer p {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 🔹 NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="Anathi Ncayiyana.png" alt="Logo" class="logo me-2">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="My Work.html">MY WORK</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Say Hi.html">SAY HI</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 CONTACT SECTION -->
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+
+    <div class="contact-container">
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <a href="tel:0714714285">071 471 4285</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:anathie.kuseni@gmail.com">anathie.kuseni@gmail.com</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/anathi-ncayiyana/" target="_blank">
+          linkedin.com/in/anathi-ncayiyana/
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 FIXED FOOTER -->
+  <footer>
+    <p>&copy; 2025 Anathi's Portfolio. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/anathi-ncayiyana/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
